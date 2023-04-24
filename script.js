@@ -78,8 +78,71 @@ const misDatosInstagram = {
     }
 }
 
+
 console.log ("Datos completos:", misDatos); 
 console.log ("musica por genero", misDatos.musicaPorGenero); 
 console.log ( "musica preferida", misDatos.musicaPorGenero.rock); 
 console.log ("Nombre completo :", misDatos.nombreCompleto() ); 
 console.log ("Nombre completo :", misDatosInstagram.nombreCompleto() ); 
+
+
+//Array 
+//almacena distintos tipos de datos, su primer elemento es el indice 0 
+const cancionesPP = [
+    "Soy el Belicon ",
+    "El azul", 
+    "El Tsurito", 
+    "AMG",  
+
+    {
+    2020: 5, 
+    2021: 30, 
+    2022: 56,
+    total: 91 
+    }
+]; 
+
+console.log ("Canciones con color :", cancionesPP [1]);
+console.log ("Canciones hechas el 2021:", cancionesPP [4][2021]);
+console.log ("Canciones hechas el 2021:", cancionesPP [4][2022]);
+console.log ("Canciones hechas el 2021:", cancionesPP [4][2020]);
+console.log ("Canciones hechas el 2021:", cancionesPP [4].total);
+
+
+
+
+
+// diferencia entre objeto y arreglo, ambos son objetos solo que los arreglos son un tipo de objeto especial, que nos ayuda a trabajar con otros tipos de datos 
+//
+
+//---------------------------------
+// Conversion de datos 
+const myNumber = 420 // minutos en la sesion 
+console.log ( "num. de munutos en la sesion: " + myNumber); 
+const myNumberTxt = String (myNumber); 
+console.log ("Num. minutos en la sesion : " + myNumberTxt); 
+
+// toNumber
+/*const myString ="420"; 
+const sumatoria = 80 + myString; 
+console.log ( "Valor de sumatoria: " + sumatoria); */
+//Para que esto salga correcto debemos usar la palabra Number 
+const myString ="420"; 
+const sumatoria = 80 + Number (myString); // se puede ocupar tambien parseInt 
+console.log ( "Valor de sumatoria: " + sumatoria); 
+
+
+//toBoolean
+const isBelicoso = "false"
+if (isBelicoso === "false ") {
+    console.log ( "Denle su belikin");
+}
+else {
+    console.log ("abra paso a la barredora"); 
+}
+
+// Boolean : Para que sea false, debe ser: " ", 0, null, undefined 
+// number: [] = 0, [30]= 30, [ 3.1] = NaN  salse= 0 true =1 
+//String : []= 
+
+//Declarar y usar funciones 
